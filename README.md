@@ -4,8 +4,7 @@
 - ブランチについて  
   
 `main` リリース版、どういう状況になってるかは不明
-
-`php_transplant` php版を単純に移植しただけ、機能の追加などなし  
+当リポジトリはFork
 
 その他はかいはつちう~
 
@@ -13,7 +12,7 @@
 
 musicarchive flask版  
 
-DBはSQLite3を利用  
+DBはMySQLを利用  
 
 - ライブラリのインストール  
 `git clone`したリポジトリ内で`pip install -r requirements.txt  
