@@ -43,8 +43,8 @@ def recorder() -> str:
             music_file.save(file_path)
             
             y, sr = librosa.load(file_path, sr=22050)
-            bpm: float
-            bpm = librosa.beat.beat_track(y=y, sr=sr)
+            tempo, _ = librosa.beat.beat_track(y=y, sr=sr)
+            bpm: float = float(tempo)
 
             music = Music(
                 song_name=song_name,
